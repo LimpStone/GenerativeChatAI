@@ -1,4 +1,4 @@
-A chat interface inspired by WhatsApp that uses the MistralAI API to create an intelligent conversational assistant with the help of Same.
+A chat interface inspired by WhatsApp that uses the MistralAI API to create an intelligent conversational girlfriend with the help of Same.
 ![brave_DXa0ZPdd5l](https://github.com/user-attachments/assets/f65e14b9-e1bd-4a26-820a-b26fc4ce4153)
 ## Features
 
