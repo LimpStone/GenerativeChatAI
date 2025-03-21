@@ -1,98 +1,95 @@
+A chat interface inspired by WhatsApp that uses the MistralAI API to create an intelligent conversational assistant with the help of Same.
+![brave_DXa0ZPdd5l](https://github.com/user-attachments/assets/f65e14b9-e1bd-4a26-820a-b26fc4ce4153)
+## Features
 
-Una interfaz de chat inspirada en WhatsApp que utiliza la API de MistralAI para crear un asistente conversacional inteligente con la ayuda de Same.
+- 🎨 WhatsApp Web-inspired user interface with dark theme
+- 🤖 Integration with the OpenAI API for intelligent responses
+- 💬 Fully functional chat experience
+- 🌐 Responsive web application built with Next.js
+- 🔄 "Typing..." indicator while responses are being generated
+- 🚀 Easy to install and configure on Linux servers
 
-## Características
+## Quick Installation (Linux)
 
-- 🎨 Interfaz de usuario inspirada en WhatsApp Web con tema oscuro
-- 🤖 Integración con la API de OpenAI para respuestas inteligentes
-- 💬 Experiencia de chat completamente funcional
-- 🌐 Aplicación web responsive construida con Next.js
-- 🔄 Indicador de "escribiendo..." mientras se generan respuestas
-- 🚀 Fácil de instalar y configurar en servidores Linux
-
-## Instalación Rápida (Linux)
-
-Para instalar esta aplicación en un servidor Linux (como AWS), simplemente ejecuta el script de instalación incluido:
+To install this application on a Linux server (like AWS), simply run the included installation script:
 
 ```bash
-# Clonar el repositorio
+# Clone the repository
 git clone [URL-DEL-REPOSITORIO]
 cd whatsapp-ui-clone
 
-# Hacer el script ejecutable
+# Make the script executable
 chmod +x install.sh
 
-# Ejecutar el script de instalación
+# Run the installation script
 ./install.sh
 ```
 
-El script de instalación:
-1. Instala Node.js y npm si no están presentes
-2. Opcionalmente instala Bun para mejor rendimiento
-3. Configura todas las dependencias necesarias
-4. Crea un archivo de variables de entorno para tu API key
-5. Configura PM2 para mantener la aplicación en ejecución
-6. Provee instrucciones para lanzar la aplicación
+The installation script:
+1. Installs Node.js and npm if they are not present
+2. Optionally installs Bun for better performance
+3. Configures all necessary dependencies
+4. Creates an environment variables file for your API key
+5. Configures PM2 to keep the application running
+6. Provides instructions to launch the application
+   
+## Manual Setup
 
-## Configuración Manual
-
-Si prefieres configurar manualmente:
-
+If you prefer to set up manually:
 ```bash
-# Instalar dependencias
+# Install dependencies
 npm install
-# o con Bun (más rápido)
+# or with Bun (faster)
 bun install
 
-# Construir la aplicación
+# Build the application
 npm run build
-# o con Bun
+# or with Bun
 bun run build
 
-# Iniciar el servidor
-npm start
-# o con Bun
+# Start the server
+npm start / npm run dev
+# or with Bun
 bun start
 ```
 
-## Configuración de MistralAi
+## MistralAi Setup
 
-Para conectar con la API de MistralAi:
+To connect with the MistralAi API:
 
-1. Obtén una clave API de [MistralAI](https://mistral.ai/)
-2. Configúrala en el archivo `.env.local`:
+1. Obtain an API key from [MistralAI](https://mistral.ai/)
+2.Set it up in the `.env.local`:
    ```
    const client = new Mistral({ apiKey: "API HERE PAPI" });
    ```
-## Personalización
+## Customization
 
-### Cambiar el fondo
-El fondo del chat actualmente está configurado como negro `#0a0a0a`. Puedes modificar este color en el archivo `src/components/chat-area.tsx`.
+### Change Background
+The chat background is currently set to black  `#0a0a0a`.You can modify this color in the `src/components/chat-area.tsx` file.
 
-### Cambiar el nombre del contacto
-Para cambiar el nombre del contacto, edita `src/components/chat-list.tsx` y modifica el nombre "Novia otaku" por lo que prefieras.
+### Change Contact Name
+To change the contact name, edit `src/components/chat-list.tsx`and modify "Novia otaku" to whatever you prefer.
 
-### Añadir comportamiento personalizado del asistente
-Puedes modificar el comportamiento del asistente editando el mensaje del sistema en la sección de código de MistralAi en su plataforma:
+### Add Custom Assistant Behavior
+You can modify the assistant's behavior by editing the system message in the MistralAi code section on their platform:
 
+## Running in Production
 
-## Ejecución en Producción
-
-Para mantener la aplicación en ejecución en producción, se incluye una configuración de PM2:
+To keep the application running in production, a PM2 configuration is included:
 
 ```bash
-# Iniciar con PM2
+# Start with PM2
 pm2 start ecosystem.config.js
 
-# Configurar inicio automático al reiniciar
+# Configure automatic start on reboot
 pm2 startup
 pm2 save
 
-# Ver logs
+# View logs
 pm2 logs whatsapp-ui-clone
 ```
 
-## Tecnologías Utilizadas
+## Technologies Used
 
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -100,14 +97,14 @@ pm2 logs whatsapp-ui-clone
 - [OpenAI API](https://platform.openai.com/)
 - [ShadCN UI](https://ui.shadcn.com/)
 
-## Licencia
+## License
 
-Este proyecto está disponible bajo la licencia MIT.
+This project is licensed under the MIT license.
 
-## Soporte
+## Support
 
-Si tienes problemas o preguntas, por favor abre un issue en el repositorio.
+If you have any issues or questions, please open an issue in the repository.
 
 ---
 
-Desarrollado con ❤️
+Developed with ❤️
