@@ -1,5 +1,5 @@
 
-Una interfaz de chat inspirada en WhatsApp que utiliza la API de OpenAI para crear un asistente conversacional inteligente.
+Una interfaz de chat inspirada en WhatsApp que utiliza la API de MistralAI para crear un asistente conversacional inteligente con la ayuda de Same.
 
 ## Características
 
@@ -55,34 +55,26 @@ npm start
 bun start
 ```
 
-## Configuración de OpenAI
+## Configuración de MistralAi
 
-Para conectar con la API de OpenAI:
+Para conectar con la API de MistralAi:
 
 1. Obtén una clave API de [MistralAI](https://mistral.ai/)
 2. Configúrala en el archivo `.env.local`:
    ```
-   OPENAI_API_KEY=tu-clave-api-aquí
+   const client = new Mistral({ apiKey: "API HERE PAPI" });
    ```
-   O alternativamente, edita el archivo `src/components/chat-area.tsx` y reemplaza `YOUR_OPENAI_API_KEY` con tu clave.
-
 ## Personalización
 
 ### Cambiar el fondo
 El fondo del chat actualmente está configurado como negro `#0a0a0a`. Puedes modificar este color en el archivo `src/components/chat-area.tsx`.
 
 ### Cambiar el nombre del contacto
-Para cambiar el nombre del contacto, edita `src/components/chat-list.tsx` y modifica el nombre "Novia" por lo que prefieras.
+Para cambiar el nombre del contacto, edita `src/components/chat-list.tsx` y modifica el nombre "Novia otaku" por lo que prefieras.
 
 ### Añadir comportamiento personalizado del asistente
-Puedes modificar el comportamiento del asistente editando el mensaje del sistema en la sección de código de OpenAI en `src/components/chat-area.tsx`:
+Puedes modificar el comportamiento del asistente editando el mensaje del sistema en la sección de código de MistralAi en su plataforma:
 
-```javascript
-{
-  role: 'system',
-  content: 'Eres un asistente amable y útil. Responde siempre en español.'
-}
-```
 
 ## Ejecución en Producción
 
