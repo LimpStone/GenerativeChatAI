@@ -9,30 +9,7 @@ A chat interface inspired by WhatsApp that uses the MistralAI API to create an i
 - 🔄 "Typing..." indicator while responses are being generated
 - 🚀 Easy to install and configure on Linux servers
 
-## Quick Installation (Linux)
 
-To install this application on a Linux server (like AWS), simply run the included installation script:
-
-```bash
-# Clone the repository
-git clone [URL-DEL-REPOSITORIO]
-cd whatsapp-ui-clone
-
-# Make the script executable
-chmod +x install.sh
-
-# Run the installation script
-./install.sh
-```
-
-The installation script:
-1. Installs Node.js and npm if they are not present
-2. Optionally installs Bun for better performance
-3. Configures all necessary dependencies
-4. Creates an environment variables file for your API key
-5. Configures PM2 to keep the application running
-6. Provides instructions to launch the application
-   
 ## Manual Setup
 
 If you prefer to set up manually:
