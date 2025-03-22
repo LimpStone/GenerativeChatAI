@@ -11,8 +11,6 @@ A chat interface inspired by WhatsApp that uses the MistralAI API to create an i
 
 
 ## Manual Setup
-
-If you prefer to set up manually:
 ```bash
 # Install dependencies
 npm install
